@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="sib">Sib</string>
+    <string name="lam">Lam</string>
+    <string name="sol">Sol</string>
+    <string name="fa">Fa</string>
+    <string name="mim">Mim</string>
+    <string name="r_m">Rém</string>
+    <string name="Do">Do</string>
+    <string name="sample">Sample</string>
+    <string name="musique">Musique</string>
+    <dimen name="dimboutL">120dp</dimen>
+    <dimen name="dimboutl">90dp</dimen>
+
+</resources>

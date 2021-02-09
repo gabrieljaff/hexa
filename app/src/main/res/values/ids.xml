@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Do" type="id" />
+    <item name="Sol" type="id" />
+    <item name="Fa" type="id" />
+    <item name="Mi" type="id" />
+    <item name="Re" type="id" />
+    <item name="Si" type="id" />
+    <item name="La" type="id" />
+</resources>
