@@ -1,4 +1,8 @@
 <resources>
+    <dimen name="dimboutL">120dp</dimen>
+    <dimen name="dimboutl">90dp</dimen>
+    <dimen name="dimboutnotesL">120dp</dimen>
+    <dimen name="dimboutnotesl">90dp</dimen>
     <string name="app_name">test</string>
     <string name="sib">Sib</string>
     <string name="lam">Lam</string>
@@ -9,7 +13,16 @@
     <string name="Do">Do</string>
     <string name="sample">Sample</string>
     <string name="musique">Musique</string>
-    <dimen name="dimboutL">120dp</dimen>
-    <dimen name="dimboutl">90dp</dimen>
+    <string name="Sol">Sol</string>
+    <string name="Ré">Ré</string>
+    <string name="La">La</string>
+    <string name="Mi">Mi</string>
+    <string name="Si">Si</string>
+    <string name="Solb">Solb</string>
+    <string name="Réb">Réb</string>
+    <string name="Lab">Lab</string>
+    <string name="Mib">Mib</string>
+    <string name="Sib">Sib</string>
+    <string name="Fa">Fa</string>
 
 </resources>

@@ -2,6 +2,8 @@ android/support/interpolator/R.java
  android.support.interpolator.R
 android/support/print/R.java
  android.support.print.R
+com/example/test/Musique.java
+ com.example.test.Musique
 com/example/test/Sampler.java
  com.example.test.Sampler
 android/support/customview/R.java
@@ -78,18 +80,10 @@ android/support/drawerlayout/R.java
  android.support.drawerlayout.R$string
  android.support.drawerlayout.R$style
  android.support.drawerlayout.R$styleable
-android/support/loader/R.java
- android.support.loader.R
- android.support.loader.R$attr
- android.support.loader.R$color
- android.support.loader.R$dimen
- android.support.loader.R$drawable
- android.support.loader.R$id
- android.support.loader.R$integer
- android.support.loader.R$layout
- android.support.loader.R$string
- android.support.loader.R$style
- android.support.loader.R$styleable
+com/example/test/MainActivity.java
+ com.example.test.MainActivity
+ com.example.test.MainActivity$1
+ com.example.test.MainActivity$2
 android/support/coreui/R.java
  android.support.coreui.R
  android.support.coreui.R$attr
@@ -114,6 +108,8 @@ android/support/compat/R.java
  android.support.compat.R$string
  android.support.compat.R$style
  android.support.compat.R$styleable
+org/billthefarmer/mididriver/R.java
+ org.billthefarmer.mididriver.R
 android/support/fragment/R.java
  android.support.fragment.R
  android.support.fragment.R$attr
@@ -224,11 +220,19 @@ android/support/asynclayoutinflater/R.java
  android.support.asynclayoutinflater.R$styleable
 android/arch/lifecycle/viewmodel/R.java
  android.arch.lifecycle.viewmodel.R
-org/billthefarmer/mididriver/R.java
- org.billthefarmer.mididriver.R
-com/example/test/Musique.java
- com.example.test.Musique
-com/example/test/MainActivity.java
- com.example.test.MainActivity
- com.example.test.MainActivity$1
- com.example.test.MainActivity$2
+android/support/loader/R.java
+ android.support.loader.R
+ android.support.loader.R$attr
+ android.support.loader.R$color
+ android.support.loader.R$dimen
+ android.support.loader.R$drawable
+ android.support.loader.R$id
+ android.support.loader.R$integer
+ android.support.loader.R$layout
+ android.support.loader.R$string
+ android.support.loader.R$style
+ android.support.loader.R$styleable
+com/example/test/menu_musique.java
+ com.example.test.menu_musique
+com/example/test/Musique_notes.java
+ com.example.test.Musique_notes

@@ -4,308 +4,338 @@ package com.example.test;
 
 
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import org.billthefarmer.mididriver.MidiDriver;
 import android.media.MediaPlayer;
-import android.util.Log;
+import android.os.Bundle;
+//import android.widget.CompoundButton;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.TextView;
 
+import org.billthefarmer.mididriver.MidiDriver;
 import org.billthefarmer.mididriver.MidiConstants;
 import org.billthefarmer.mididriver.GeneralMidiConstants;
-//import java.io.File;
-// import  android.media.midi.MidiDevice; https://source.android.com/devices/audio/midi
-//https://developer.android.com/reference/android/media/midi/package-summary
-// autre alternative : https://stackoverflow.com/questions/36193250/android-6-0-marshmallow-how-to-play-midi-notes
-//voir fonctionnement fichiers midi et media driver
+import org.billthefarmer.mididriver.ReverbConstants;
 
+import java.util.Locale;
 
-public class Musique extends AppCompatActivity implements MidiDriver.OnMidiStartListener,
+public class Musique extends AppCompatActivity
+        implements View.OnTouchListener ,View.OnClickListener/*,
+        CompoundButton.OnCheckedChangeListener*/,
+        MidiDriver.OnMidiStartListener
+{
+    private TextView text;
 
-
-        View.OnTouchListener {
-
-    protected MidiDriver midiDriver;
+    protected MidiDriver midi;
     protected MediaPlayer player;
 
-    private byte[] event;
-    private int[] config;
-    //déclaration des boutons notes
-    private Button Do;
-   /* private Button Re;
-    private Button Mi;
-    private Button Fa;
-    private Button Sol;
-    private Button La;
-    private Button Si;*/
-
+    // On create
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_musique);
-        MediaPlayer.create(this, R.raw.ants);
-        Do= (Button) findViewById(R.id.activity_musique_do);
-       /* Re= (Button) findViewById(R.id.activity_musique_re);
-        Mi= (Button) findViewById(R.id.activity_musique_mi);
-        Fa= (Button) findViewById(R.id.activity_musique_fa);
-        Sol= (Button) findViewById(R.id.activity_musique_sol);
-        La= (Button) findViewById(R.id.activity_musique_la);
-        Si= (Button) findViewById(R.id.activity_musique_si);*/
-        Do.setOnTouchListener(this);
-       /* Re.setOnTouchListener(this);
-        Mi.setOnTouchListener(this);
-        Fa.setOnTouchListener(this);
-        Sol.setOnTouchListener(this);
-        La.setOnTouchListener(this);
-        Si.setOnTouchListener(this);*/
 
-        // Instantiate the driver.
-        midiDriver = new MidiDriver();
-        // Set the listener.
-        midiDriver.setOnMidiStartListener(this);
+        // Create midi driver
+        midi = new MidiDriver();
+
+        // Set on touch listener
+        View v = findViewById(R.id.activity_musique_do);
+        if (v != null)
+            v.setOnTouchListener(this);
+
+        v = findViewById(R.id.activity_musique_re);
+        if (v != null)
+            v.setOnTouchListener(this);
+
+        v = findViewById(R.id.activity_musique_mi);
+        if (v != null)
+            v.setOnTouchListener(this);
+
+        v = findViewById(R.id.activity_musique_fa);
+        if (v != null)
+            v.setOnTouchListener(this);
+
+        v = findViewById(R.id.activity_musique_sol);
+        if (v != null)
+            v.setOnTouchListener(this);
+
+        v = findViewById(R.id.activity_musique_la);
+        if (v != null)
+            v.setOnTouchListener(this);
+
+        v = findViewById(R.id.activity_musique_si);
+        if (v != null)
+            v.setOnTouchListener(this);
+
+
+        v = findViewById(R.id.activity_musique_drum);
+        if (v != null)
+            v.setOnClickListener(this);
+
+        v = findViewById(R.id.activity_musique_snare);
+        if (v != null)
+            v.setOnClickListener(this);
+
+        v = findViewById(R.id.activity_musique_hithat);
+        if (v != null)
+            v.setOnClickListener(this);
+       /* v = findViewById(R.id.activity_musique_la);
+        if (v != null)
+            v.setOnClickListener(this);
+
+        v = findViewById(R.id.activity_musique_re);
+        if (v != null)
+            v.setOnClickListener(this);*/
+
+       /* v = findViewById(R.id.activity_musique_mi);
+        if (v != null)
+            ((CompoundButton) v).setOnCheckedChangeListener(this);*/
+
+     //   text = findViewById(R.id.status);
+
+        // Set on midi start listener
+        if (midi != null)
+            midi.setOnMidiStartListener(this);
     }
 
+    // On resume
     @Override
-    protected void onResume() {
+    protected void onResume()
+    {
         super.onResume();
-        midiDriver.start();
 
-        // Get the configuration.
-        config = midiDriver.config();
+        // Start midi
 
-        // Print out the details.
-        Log.d(this.getClass().getName(), "maxVoices: " + config[0]);
-        Log.d(this.getClass().getName(), "numChannels: " + config[1]);
-        Log.d(this.getClass().getName(), "sampleRate: " + config[2]);
-        Log.d(this.getClass().getName(), "mixBufferSize: " + config[3]);
+        if (midi != null)
+            midi.start();
     }
 
-
-
-
+    // On pause
     @Override
-    protected void onPause() {
+    protected void onPause()
+    {
         super.onPause();
-        midiDriver.stop();
+
+        // Stop midi
+        if (midi != null)
+            midi.stop();
+
+        // Stop player
+        if (player != null)
+            player.stop();
     }
 
+    // On touch
     @Override
-    public void onMidiStart() {
-        Log.d(this.getClass().getName(), "onMidiStart()");
-    }
+    public boolean onTouch(View v, MotionEvent event)
+    {
+        int action = event.getAction();
+        int id = v.getId();
 
-    private void playNote() {
+        switch (action) {
+            // Down
+            case MotionEvent.ACTION_DOWN:
+                switch (id) {
+                    case R.id.activity_musique_do:
+                        sendMidi(0x91, 60, 63);
+                        sendMidi(0x91, 64, 63);
+                        sendMidi(0x91, 67, 63);
+                        break;
 
-        // Construct a note ON message for the middle C at maximum velocity on channel 1:
-        event = new byte[3];
-        event[0] = (byte) (MidiConstants.NOTE_ON );  // 0x90 = note On, 0x00 = channel 1
-        event[1] = (byte) 0x3C;  // 0x3C = middle C
-        event[2] = (byte) 0x7F;  // 0x7F = the maximum velocity (127)
+                    case R.id.activity_musique_re:
+                        sendMidi(0x91, 62, 63);
+                        sendMidi(0x91, 65, 63);
+                        sendMidi(0x91, 69, 63);
+                        break;
 
-        // Internally this just calls write() and can be considered obsoleted:
-        //midiDriver.queueEvent(event);
+                    case R.id.activity_musique_mi:
+                        sendMidi(0x91, 64, 63);
+                        sendMidi(0x91, 67, 63);
+                        sendMidi(0x91, 71, 63);
+                        break;
 
-        // Send the MIDI event to the synthesizer.
-        midiDriver.write(event);
+                    case R.id.activity_musique_fa:
+                        sendMidi(0x91, 65, 63);
+                        sendMidi(0x91, 69, 63);
+                        sendMidi(0x91, 72, 63);
+                        break;
 
-    }
+                    case R.id.activity_musique_sol:
+                        sendMidi(0x91, 67, 63);
+                        sendMidi(0x91, 71, 63);
+                        sendMidi(0x91, 74, 63);
+                        break;
 
-    private void stopNote() {
+                    case R.id.activity_musique_la:
+                        sendMidi(0x91, 69, 63);
+                        sendMidi(0x91, 72, 63);
+                        sendMidi(0x91, 76, 63);
+                        break;
 
-        // Construct a note OFF message for the middle C at minimum velocity on channel 1:
-        event = new byte[3];
-        event[0] = (byte) (0x80 |0x00);  // 0x80 = note Off, 0x00 = channel 1
-        event[1] = (byte) 0x3C;  // 0x3C = middle C
-        event[2] = (byte) 0x00;  // 0x00 = the minimum velocity (0)
+                    case R.id.activity_musique_si:
+                        sendMidi(0x91, 71, 63);
+                        sendMidi(0x91, 74, 63);
+                        sendMidi(0x91, 87, 63);
+                        break;
 
-        // Send the MIDI event to the synthesizer.
-        midiDriver.write(event);
+                    default:
+                        return false;
+                }
 
-    }
+                v.performClick();
+                break;
 
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
+            // Up
+            case MotionEvent.ACTION_UP:
+                switch (id) {
+                    case R.id.activity_musique_do:
+                        sendMidi(MidiConstants.NOTE_ON, 60, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 64, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 67, 0);
+                        break;
 
-        Log.d(this.getClass().getName(), "Motion event: " + event);
+                    case R.id.activity_musique_re:
+                        sendMidi(MidiConstants.NOTE_ON, 62, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 65, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 69, 0);
+                        break;
 
-        if (v.getId() == R.id.La) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
+                    case R.id.activity_musique_mi:
+                        sendMidi(MidiConstants.NOTE_ON, 64, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 67, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 71, 0);
+                        break;
 
-                playNote();
-                player.start();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_UP");
-                stopNote();
-                player.stop();
-            }
-        }
-        if (v.getId() == R.id.Si) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
-                playNote();
-                player.start();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_UP");
-                stopNote();
-                player.stop();
-            }
-        }
-        if (v.getId() == R.id.Do) {
+                    case R.id.activity_musique_fa:
+                        sendMidi(MidiConstants.NOTE_ON, 65, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 69, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 72, 0);
+                        break;
 
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
-                playNote();
-                MediaPlayer.create(this, R.raw.ants);
-                player.start();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_UP");
-                stopNote();
-                player.stop();
-                player.release();
-            }
-        }
-        if (v.getId() == R.id.Re) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
-                playNote();
-                player.start();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_UP");
-                stopNote();
-                player.stop();
-            }
-        }
-        if (v.getId() == R.id.Mi) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
-                playNote();
-                player.start();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_UP");
-                stopNote();
-                player.stop();
-            }
-        }
+                    case R.id.activity_musique_sol:
+                        sendMidi(MidiConstants.NOTE_ON, 67, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 71, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 74, 0);
+                        break;
 
+                    case R.id.activity_musique_la:
+                        sendMidi(MidiConstants.NOTE_ON, 69, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 72, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 76, 0);
+                        break;
 
-        if (v.getId() == R.id.Fa) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
-                playNote();
-                player.start();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_UP");
-                stopNote();
-                player.stop();
-            }
-        }
+                    case R.id.activity_musique_si:
+                        sendMidi(MidiConstants.NOTE_ON, 71, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 74, 0);
+                        sendMidi(MidiConstants.NOTE_ON, 87, 0);
+                        break;
 
+                    default:
+                        return false;
+                }
+                break;
 
-        if (v.getId() == R.id.Sol) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
-                playNote();
-                player.start();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_UP");
-                stopNote();
-                player.stop();
-            }
+            default:
+                return false;
         }
 
         return false;
     }
-}
-   /*
-public class Musique extends AppCompatActivity {
 
-   @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        //création de l'activité
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_musique);
+    // On click
+    @Override
+    public void onClick(View v)
+    {
+        int id = v.getId();
 
-        //affiliation des boutons à l'interface graphique
-        Do= (Button) findViewById(R.id.activity_musique_do);
-        Re= (Button) findViewById(R.id.activity_musique_re);
-        Mi= (Button) findViewById(R.id.activity_musique_mi);
-        Fa= (Button) findViewById(R.id.activity_musique_fa);
-        Sol= (Button) findViewById(R.id.activity_musique_sol);
-        La= (Button) findViewById(R.id.activity_musique_la);
-        Si= (Button) findViewById(R.id.activity_musique_si);
-        //end
+        switch (id) {
+            case R.id.activity_musique_drum:
+                sendMidi(0x99, 36, 100);
+                break;
 
-        //implémentation fichier midi
+            case R.id.activity_musique_snare:
+                sendMidi(0x99, 40, 100);
+                break;
 
-        //fin imp midi
-
-        //affiliation des boutons aux clique et aux différentes notes
-        Fa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-
-            }
-        });
-        Do.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
-        Sol.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
-        La.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
-        Re.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
-        Mi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
-        Si.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
+            case R.id.activity_musique_hithat:
+                sendMidi(0x99, 42, 100);
+                break;
+        }
     }
-    //déclaration des boutons notes
-    private Button Do;
-    private Button Re;
-    private Button Mi;
-    private Button Fa;
-    private Button Sol;
-    private Button La;
-    private Button Si;
-}*/
+  /*  @Override
+    public void onClick(View v)
+    {
+        int id = v.getId();
+
+        switch (id) {
+            case R.id.activity_musique_la:
+                if (player != null) {
+                    player.stop();
+                    player.release();
+                }
+
+                player = MediaPlayer.create(this, R.raw.ants);
+                player.start();
+                break;
+
+            case R.id.activity_musique_re:
+                if (player != null)
+                    player.stop();
+                break;
+        }
+    }*/
+
+    // onCheckedChanged
+   /* @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+    {
+        if (isChecked)
+            midi.setReverb(ReverbConstants.CHAMBER);
+
+        else
+            midi.setReverb(ReverbConstants.OFF);
+    }*/
+
+    // Listener for sending initial midi messages when the Sonivox
+    // synthesizer has been started, such as program change.
+    @Override
+    public void onMidiStart()
+    {
+        // Program change - harpsichord
+        sendMidi(MidiConstants.PROGRAM_CHANGE,
+                GeneralMidiConstants.HARPSICHORD);
+
+        // Get the config
+        int config[] = midi.config();
+
+        //String format = getString(R.string.format);
+        //String info = String.format(Locale.getDefault(), format, config[0],
+                //config[1], config[2], config[3]);
+
+       // if (text != null)
+        //    text.setText(info);
+    }
+
+    // Send a midi message, 2 bytes
+    protected void sendMidi(int m, int n)
+    {
+        byte msg[] = new byte[2];
+
+        msg[0] = (byte) m;
+        msg[1] = (byte) n;
+
+        midi.write(msg);
+    }
+
+    // Send a midi message, 3 bytes
+    protected void sendMidi(int m, int n, int v)
+    {
+        byte msg[] = new byte[3];
+
+        msg[0] = (byte) m;
+        msg[1] = (byte) n;
+        msg[2] = (byte) v;
+
+        midi.write(msg);
+    }
+}

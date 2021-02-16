@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // The user just clicked
-                Intent intentmusique = new Intent(MainActivity.this, Musique.class);
-                startActivity(intentmusique);
+                Intent intentmenmusique = new Intent(MainActivity.this, menu_musique.class);
+                startActivity(intentmenmusique);
             }
         });
         //end
