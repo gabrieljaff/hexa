@@ -19,10 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.test.Musique_notes" />
-        <activity android:name="com.example.test.menu_musique" />
-        <activity android:name="com.example.test.Sampler" />
-        <activity android:name="com.example.test.Musique" />
+        <activity android:name="com.example.test.Config" />
         <activity android:name="com.example.test.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\pauld\\AndroidStudioProjects\\test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "/home/jaffres/Documents/5a/PFE/test/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pauld\\.gradle\\caches\\transforms-3\\613b2cc948f3813ffb546934cde294ef\\transformed\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\pauld\\.gradle\\caches\\transforms-3\\9d265b809eb6865f5d40370070860087\\transformed\\res\\values-v16\\values-v16.xml",
+                    "source": "/root/.gradle/caches/transforms-3/9d056b432e474d2d97d6e12bbd67e751/transformed/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/root/.gradle/caches/transforms-3/dd66cebd586c6c057f7eccfa698555fa/transformed/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

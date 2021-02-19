@@ -1,53 +1,65 @@
-// Activité page d'acceuil//
-//git@github.com:gabrieljaff/hexapad_appli.git
 package com.example.test;
 
-import android.content.Intent;
+import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+
+    static public int ton = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //création de l'activité principale
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //end
 
-        //affiliation des boutons à l'interface graphique
-        bouton1= (Button) findViewById(R.id.activity_main_btn1);
-        bouton2= (Button) findViewById(R.id.activity_main_btn2);
-        //end
+        View v = findViewById(R.id.activity_config_do);
+        if (v != null)
+            v.setOnClickListener(this);
 
-        //affiliatition de changemant d'activité vers Musique avec intéraction bouton 1
-        bouton1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // The user just clicked
-                Intent intentsampler = new Intent(MainActivity.this, Sampler.class);
-                startActivity(intentsampler);
-            }
-        });
-        //end
+        v = findViewById(R.id.activity_config_re);
+        if (v != null)
+            v.setOnClickListener(this);
 
-        //
-        //affiliatition de changemant d'activité vers Sample avec bouton 2
-        bouton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // The user just clicked
-                Intent intentmenmusique = new Intent(MainActivity.this, menu_musique.class);
-                startActivity(intentmenmusique);
-            }
-        });
-        //end
+
+
+        v = findViewById(R.id.activity_config_apply);
+        if (v != null)
+            v.setOnClickListener(this);
+
     }
 
-    // déclaration des boutons
-    private Button bouton1;
-    private Button bouton2;
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+
+        switch (id) {
+            case R.id.activity_config_do :
+                ton = 0 ;
+
+                ((Button)findViewById(R.id.activity_config_re)).setBackgroundColor(Color.WHITE);
+                ((Button)findViewById(R.id.activity_config_do)).setBackgroundColor(Color.GRAY);
+                break;
+            case R.id.activity_config_re :
+                ton = 1 ;
+                ((Button)findViewById(R.id.activity_config_do)).setBackgroundColor(Color.WHITE);
+                ((Button)findViewById(R.id.activity_config_re)).setBackgroundColor(Color.GRAY);
+                break;
+
+            case R.id.activity_config_apply :
+                    Intent intentdomaj = new Intent(MainActivity.this, Config.class);
+                    startActivity(intentdomaj);
+
+                break;
+
+        }
+    }
 }

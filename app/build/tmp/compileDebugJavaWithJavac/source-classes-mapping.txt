@@ -2,10 +2,6 @@ android/support/interpolator/R.java
  android.support.interpolator.R
 android/support/print/R.java
  android.support.print.R
-com/example/test/Musique.java
- com.example.test.Musique
-com/example/test/Sampler.java
- com.example.test.Sampler
 android/support/customview/R.java
  android.support.customview.R
  android.support.customview.R$attr
@@ -60,7 +56,6 @@ com/example/test/R.java
  com.example.test.R$integer
  com.example.test.R$layout
  com.example.test.R$mipmap
- com.example.test.R$raw
  com.example.test.R$string
  com.example.test.R$style
  com.example.test.R$styleable
@@ -80,10 +75,8 @@ android/support/drawerlayout/R.java
  android.support.drawerlayout.R$string
  android.support.drawerlayout.R$style
  android.support.drawerlayout.R$styleable
-com/example/test/MainActivity.java
- com.example.test.MainActivity
- com.example.test.MainActivity$1
- com.example.test.MainActivity$2
+org/billthefarmer/mididriver/R.java
+ org.billthefarmer.mididriver.R
 android/support/coreui/R.java
  android.support.coreui.R
  android.support.coreui.R$attr
@@ -108,8 +101,6 @@ android/support/compat/R.java
  android.support.compat.R$string
  android.support.compat.R$style
  android.support.compat.R$styleable
-org/billthefarmer/mididriver/R.java
- org.billthefarmer.mididriver.R
 android/support/fragment/R.java
  android.support.fragment.R
  android.support.fragment.R$attr
@@ -136,32 +127,6 @@ android/support/constraint/R.java
  android.support.constraint.R$string
  android.support.constraint.R$style
  android.support.constraint.R$styleable
-android/arch/lifecycle/livedata/R.java
- android.arch.lifecycle.livedata.R
-android/support/coordinatorlayout/R.java
- android.support.coordinatorlayout.R
- android.support.coordinatorlayout.R$attr
- android.support.coordinatorlayout.R$color
- android.support.coordinatorlayout.R$dimen
- android.support.coordinatorlayout.R$drawable
- android.support.coordinatorlayout.R$id
- android.support.coordinatorlayout.R$integer
- android.support.coordinatorlayout.R$layout
- android.support.coordinatorlayout.R$string
- android.support.coordinatorlayout.R$style
- android.support.coordinatorlayout.R$styleable
-android/support/coreutils/R.java
- android.support.coreutils.R
- android.support.coreutils.R$attr
- android.support.coreutils.R$color
- android.support.coreutils.R$dimen
- android.support.coreutils.R$drawable
- android.support.coreutils.R$id
- android.support.coreutils.R$integer
- android.support.coreutils.R$layout
- android.support.coreutils.R$string
- android.support.coreutils.R$style
- android.support.coreutils.R$styleable
 android/support/swiperefreshlayout/R.java
  android.support.swiperefreshlayout.R
  android.support.swiperefreshlayout.R$attr
@@ -174,6 +139,32 @@ android/support/swiperefreshlayout/R.java
  android.support.swiperefreshlayout.R$string
  android.support.swiperefreshlayout.R$style
  android.support.swiperefreshlayout.R$styleable
+android/support/coreutils/R.java
+ android.support.coreutils.R
+ android.support.coreutils.R$attr
+ android.support.coreutils.R$color
+ android.support.coreutils.R$dimen
+ android.support.coreutils.R$drawable
+ android.support.coreutils.R$id
+ android.support.coreutils.R$integer
+ android.support.coreutils.R$layout
+ android.support.coreutils.R$string
+ android.support.coreutils.R$style
+ android.support.coreutils.R$styleable
+android/support/coordinatorlayout/R.java
+ android.support.coordinatorlayout.R
+ android.support.coordinatorlayout.R$attr
+ android.support.coordinatorlayout.R$color
+ android.support.coordinatorlayout.R$dimen
+ android.support.coordinatorlayout.R$drawable
+ android.support.coordinatorlayout.R$id
+ android.support.coordinatorlayout.R$integer
+ android.support.coordinatorlayout.R$layout
+ android.support.coordinatorlayout.R$string
+ android.support.coordinatorlayout.R$style
+ android.support.coordinatorlayout.R$styleable
+android/arch/lifecycle/livedata/R.java
+ android.arch.lifecycle.livedata.R
 android/arch/lifecycle/R.java
  android.arch.lifecycle.R
 android/support/v7/appcompat/R.java
@@ -192,6 +183,8 @@ android/support/v7/appcompat/R.java
  android.support.v7.appcompat.R$styleable
 android/support/localbroadcastmanager/R.java
  android.support.localbroadcastmanager.R
+androidx/versionedparcelable/R.java
+ androidx.versionedparcelable.R
 android/support/graphics/drawable/R.java
  android.support.graphics.drawable.R
  android.support.graphics.drawable.R$attr
@@ -204,8 +197,6 @@ android/support/graphics/drawable/R.java
  android.support.graphics.drawable.R$string
  android.support.graphics.drawable.R$style
  android.support.graphics.drawable.R$styleable
-androidx/versionedparcelable/R.java
- androidx.versionedparcelable.R
 android/support/asynclayoutinflater/R.java
  android.support.asynclayoutinflater.R
  android.support.asynclayoutinflater.R$attr
@@ -232,7 +223,7 @@ android/support/loader/R.java
  android.support.loader.R$string
  android.support.loader.R$style
  android.support.loader.R$styleable
-com/example/test/menu_musique.java
- com.example.test.menu_musique
-com/example/test/Musique_notes.java
- com.example.test.Musique_notes
+com/example/test/Config.java
+ com.example.test.Config
+com/example/test/MainActivity.java
+ com.example.test.MainActivity
