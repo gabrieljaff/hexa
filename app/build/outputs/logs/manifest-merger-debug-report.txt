@@ -1,18 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-26:12
 MERGED from [:MidiDriver-1.20] /home/jaffres/Documents/5a/PFE/test/MidiDriver-1.20/build/.transforms/6a701bf6df910594d47fff2f2f57860e/transformed/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-3/6ea8e9770af364fa76c45d834d55116b/transformed/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support.constraint:constraint-layout:2.0.4] /root/.gradle/caches/transforms-3/257fefc80c04d7792bd316ebcd32d11e/transformed/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /root/.gradle/caches/transforms-3/9d056b432e474d2d97d6e12bbd67e751/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] /root/.gradle/caches/transforms-3/f7acbc2742b2aab7280af16a18d4ea67/transformed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /root/.gradle/caches/transforms-3/fea205640732633a8ef5ba007b7ac55d/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /root/.gradle/caches/transforms-3/69267fd90668133fb1142bf5f9df7f69/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] /root/.gradle/caches/transforms-3/68fe4397c5d897c3a5d56a35065b2d59/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] /root/.gradle/caches/transforms-3/dba196c7a215dc2aa4a9d81a5c131933/transformed/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /root/.gradle/caches/transforms-3/c641b54a0ca58f93ab03a268cb1b1033/transformed/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /root/.gradle/caches/transforms-3/a369a2930297c1224f2730979fe90a7e/transformed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /root/.gradle/caches/transforms-3/3b282fe5c5d9feaea4001ddf893d2310/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] /root/.gradle/caches/transforms-3/ca3660146608708122abbe67d955c379/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /root/.gradle/caches/transforms-3/b9dc6c69293821f6a3cad731ec57f240/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:drawerlayout:28.0.0] /root/.gradle/caches/transforms-3/119465b6e8e47d1f8509b02504e77e1e/transformed/AndroidManifest.xml:17:1-22:12
@@ -20,10 +21,14 @@ MERGED from [com.android.support:slidingpanelayout:28.0.0] /root/.gradle/caches/
 MERGED from [com.android.support:customview:28.0.0] /root/.gradle/caches/transforms-3/ab6a5eefccb5689376c2fd275d1951de/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] /root/.gradle/caches/transforms-3/bb1ab38626c0943d8af9342b3f05fd3a/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /root/.gradle/caches/transforms-3/aed60a211374500e0cf07dedc4e56e94/transformed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /root/.gradle/caches/transforms-3/a369a2930297c1224f2730979fe90a7e/transformed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /root/.gradle/caches/transforms-3/c641b54a0ca58f93ab03a268cb1b1033/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] /root/.gradle/caches/transforms-3/dd66cebd586c6c057f7eccfa698555fa/transformed/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /root/.gradle/caches/transforms-3/4a3961bcc7d32291d5feb2ee1fecc843/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] /root/.gradle/caches/transforms-3/782e854868abccbec57fa1ecffab049d/transformed/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /root/.gradle/caches/transforms-3/85042d8a0e506513cf536dc9aea7e16e/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /root/.gradle/caches/transforms-3/90d49c7a2ec7f14754ed36dd8860371b/transformed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /root/.gradle/caches/transforms-3/e827b766b206c5fbdd94e09a553df4f0/transformed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /root/.gradle/caches/transforms-3/85042d8a0e506513cf536dc9aea7e16e/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] /root/.gradle/caches/transforms-3/951531b778af7074a971928fd95858c4/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /root/.gradle/caches/transforms-3/2c163e0126338483f862d7746af00d87/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] /root/.gradle/caches/transforms-3/0e49e747006cdfdcfa6f384a4c88b2c3/transformed/AndroidManifest.xml:17:1-22:12
@@ -31,26 +36,27 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /root/.gradle/caches/transf
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /root/.gradle/caches/transforms-3/40c627e8b6b70e255568d5dc47724d8d/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /root/.gradle/caches/transforms-3/d8b4066fb94621935327d390e73659aa/transformed/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /root/.gradle/caches/transforms-3/0c072cc6d332d11f44d2686e74251f25/transformed/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /root/.gradle/caches/transforms-3/e827b766b206c5fbdd94e09a553df4f0/transformed/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
 		INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
-		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-22:12
+		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-26:12
 		INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
-		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-22:12
+		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:1-26:12
 		INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:5:5-20:19
+ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:5:5-24:19
+MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-3/6ea8e9770af364fa76c45d834d55116b/transformed/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-3/6ea8e9770af364fa76c45d834d55116b/transformed/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:2.0.4] /root/.gradle/caches/transforms-3/257fefc80c04d7792bd316ebcd32d11e/transformed/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:2.0.4] /root/.gradle/caches/transforms-3/257fefc80c04d7792bd316ebcd32d11e/transformed/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] /root/.gradle/caches/transforms-3/dd66cebd586c6c057f7eccfa698555fa/transformed/AndroidManifest.xml:22:5-94
@@ -71,46 +77,56 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /root/.gradle/cache
 		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.test.SelectionInstrument
+ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:12:9-15:68
+	android:label
+		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:14:13-72
+	android:theme
+		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:15:13-56
+	android:name
+		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:13:13-48
 activity#com.example.test.Config
-ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:12:9-53
+ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:16:9-44
 	android:name
-		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:12:19-41
+		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:16:19-41
 activity#com.example.test.MainActivity
-ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:13:9-19:20
+ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:17:9-23:20
 	android:name
-		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:13:19-47
+		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:17:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:14:13-18:29
+ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:15:17-69
+ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:17:17-77
+ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:17:27-74
+		ADDED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml:21:27-74
 uses-sdk
 INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
 INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
 MERGED from [:MidiDriver-1.20] /home/jaffres/Documents/5a/PFE/test/MidiDriver-1.20/build/.transforms/6a701bf6df910594d47fff2f2f57860e/transformed/AndroidManifest.xml:5:5-7:41
 MERGED from [:MidiDriver-1.20] /home/jaffres/Documents/5a/PFE/test/MidiDriver-1.20/build/.transforms/6a701bf6df910594d47fff2f2f57860e/transformed/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-3/6ea8e9770af364fa76c45d834d55116b/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-3/6ea8e9770af364fa76c45d834d55116b/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:2.0.4] /root/.gradle/caches/transforms-3/257fefc80c04d7792bd316ebcd32d11e/transformed/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:2.0.4] /root/.gradle/caches/transforms-3/257fefc80c04d7792bd316ebcd32d11e/transformed/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] /root/.gradle/caches/transforms-3/9d056b432e474d2d97d6e12bbd67e751/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /root/.gradle/caches/transforms-3/9d056b432e474d2d97d6e12bbd67e751/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /root/.gradle/caches/transforms-3/f7acbc2742b2aab7280af16a18d4ea67/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /root/.gradle/caches/transforms-3/f7acbc2742b2aab7280af16a18d4ea67/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /root/.gradle/caches/transforms-3/fea205640732633a8ef5ba007b7ac55d/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /root/.gradle/caches/transforms-3/fea205640732633a8ef5ba007b7ac55d/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /root/.gradle/caches/transforms-3/69267fd90668133fb1142bf5f9df7f69/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /root/.gradle/caches/transforms-3/69267fd90668133fb1142bf5f9df7f69/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] /root/.gradle/caches/transforms-3/68fe4397c5d897c3a5d56a35065b2d59/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] /root/.gradle/caches/transforms-3/68fe4397c5d897c3a5d56a35065b2d59/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] /root/.gradle/caches/transforms-3/dba196c7a215dc2aa4a9d81a5c131933/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] /root/.gradle/caches/transforms-3/dba196c7a215dc2aa4a9d81a5c131933/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /root/.gradle/caches/transforms-3/c641b54a0ca58f93ab03a268cb1b1033/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /root/.gradle/caches/transforms-3/c641b54a0ca58f93ab03a268cb1b1033/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /root/.gradle/caches/transforms-3/a369a2930297c1224f2730979fe90a7e/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /root/.gradle/caches/transforms-3/a369a2930297c1224f2730979fe90a7e/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /root/.gradle/caches/transforms-3/3b282fe5c5d9feaea4001ddf893d2310/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /root/.gradle/caches/transforms-3/3b282fe5c5d9feaea4001ddf893d2310/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /root/.gradle/caches/transforms-3/ca3660146608708122abbe67d955c379/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /root/.gradle/caches/transforms-3/ca3660146608708122abbe67d955c379/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /root/.gradle/caches/transforms-3/b9dc6c69293821f6a3cad731ec57f240/transformed/AndroidManifest.xml:20:5-44
@@ -125,14 +141,22 @@ MERGED from [com.android.support:swiperefreshlayout:28.0.0] /root/.gradle/caches
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] /root/.gradle/caches/transforms-3/bb1ab38626c0943d8af9342b3f05fd3a/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /root/.gradle/caches/transforms-3/aed60a211374500e0cf07dedc4e56e94/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /root/.gradle/caches/transforms-3/aed60a211374500e0cf07dedc4e56e94/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /root/.gradle/caches/transforms-3/a369a2930297c1224f2730979fe90a7e/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /root/.gradle/caches/transforms-3/a369a2930297c1224f2730979fe90a7e/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /root/.gradle/caches/transforms-3/c641b54a0ca58f93ab03a268cb1b1033/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /root/.gradle/caches/transforms-3/c641b54a0ca58f93ab03a268cb1b1033/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] /root/.gradle/caches/transforms-3/dd66cebd586c6c057f7eccfa698555fa/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] /root/.gradle/caches/transforms-3/dd66cebd586c6c057f7eccfa698555fa/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /root/.gradle/caches/transforms-3/4a3961bcc7d32291d5feb2ee1fecc843/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /root/.gradle/caches/transforms-3/4a3961bcc7d32291d5feb2ee1fecc843/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] /root/.gradle/caches/transforms-3/782e854868abccbec57fa1ecffab049d/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] /root/.gradle/caches/transforms-3/782e854868abccbec57fa1ecffab049d/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /root/.gradle/caches/transforms-3/85042d8a0e506513cf536dc9aea7e16e/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /root/.gradle/caches/transforms-3/85042d8a0e506513cf536dc9aea7e16e/transformed/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /root/.gradle/caches/transforms-3/90d49c7a2ec7f14754ed36dd8860371b/transformed/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /root/.gradle/caches/transforms-3/90d49c7a2ec7f14754ed36dd8860371b/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /root/.gradle/caches/transforms-3/e827b766b206c5fbdd94e09a553df4f0/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /root/.gradle/caches/transforms-3/e827b766b206c5fbdd94e09a553df4f0/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /root/.gradle/caches/transforms-3/85042d8a0e506513cf536dc9aea7e16e/transformed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /root/.gradle/caches/transforms-3/85042d8a0e506513cf536dc9aea7e16e/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /root/.gradle/caches/transforms-3/951531b778af7074a971928fd95858c4/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /root/.gradle/caches/transforms-3/951531b778af7074a971928fd95858c4/transformed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /root/.gradle/caches/transforms-3/2c163e0126338483f862d7746af00d87/transformed/AndroidManifest.xml:20:5-44
@@ -147,8 +171,6 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /root/.gradle/caches/tr
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /root/.gradle/caches/transforms-3/d8b4066fb94621935327d390e73659aa/transformed/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /root/.gradle/caches/transforms-3/0c072cc6d332d11f44d2686e74251f25/transformed/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /root/.gradle/caches/transforms-3/0c072cc6d332d11f44d2686e74251f25/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /root/.gradle/caches/transforms-3/e827b766b206c5fbdd94e09a553df4f0/transformed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /root/.gradle/caches/transforms-3/e827b766b206c5fbdd94e09a553df4f0/transformed/AndroidManifest.xml:20:5-44
 INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
 INJECTED from /home/jaffres/Documents/5a/PFE/test/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion

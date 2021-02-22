@@ -40,13 +40,24 @@ android/support/slidingpanelayout/R.java
  android.support.slidingpanelayout.R$string
  android.support.slidingpanelayout.R$style
  android.support.slidingpanelayout.R$styleable
+com/example/test/SelectionInstrument.java
+ com.example.test.SelectionInstrument
+ com.example.test.SelectionInstrument$1
 android/support/documentfile/R.java
  android.support.documentfile.R
 android/arch/lifecycle/livedata/core/R.java
  android.arch.lifecycle.livedata.core.R
+android/support/v7/cardview/R.java
+ android.support.v7.cardview.R
+ android.support.v7.cardview.R$attr
+ android.support.v7.cardview.R$color
+ android.support.v7.cardview.R$dimen
+ android.support.v7.cardview.R$style
+ android.support.v7.cardview.R$styleable
 com/example/test/R.java
  com.example.test.R
  com.example.test.R$anim
+ com.example.test.R$animator
  com.example.test.R$attr
  com.example.test.R$bool
  com.example.test.R$color
@@ -54,7 +65,9 @@ com/example/test/R.java
  com.example.test.R$drawable
  com.example.test.R$id
  com.example.test.R$integer
+ com.example.test.R$interpolator
  com.example.test.R$layout
+ com.example.test.R$menu
  com.example.test.R$mipmap
  com.example.test.R$string
  com.example.test.R$style
@@ -75,8 +88,18 @@ android/support/drawerlayout/R.java
  android.support.drawerlayout.R$string
  android.support.drawerlayout.R$style
  android.support.drawerlayout.R$styleable
-org/billthefarmer/mididriver/R.java
- org.billthefarmer.mididriver.R
+android/support/v7/recyclerview/R.java
+ android.support.v7.recyclerview.R
+ android.support.v7.recyclerview.R$attr
+ android.support.v7.recyclerview.R$color
+ android.support.v7.recyclerview.R$dimen
+ android.support.v7.recyclerview.R$drawable
+ android.support.v7.recyclerview.R$id
+ android.support.v7.recyclerview.R$integer
+ android.support.v7.recyclerview.R$layout
+ android.support.v7.recyclerview.R$string
+ android.support.v7.recyclerview.R$style
+ android.support.v7.recyclerview.R$styleable
 android/support/coreui/R.java
  android.support.coreui.R
  android.support.coreui.R$attr
@@ -127,6 +150,22 @@ android/support/constraint/R.java
  android.support.constraint.R$string
  android.support.constraint.R$style
  android.support.constraint.R$styleable
+android/support/design/R.java
+ android.support.design.R
+ android.support.design.R$anim
+ android.support.design.R$animator
+ android.support.design.R$attr
+ android.support.design.R$bool
+ android.support.design.R$color
+ android.support.design.R$dimen
+ android.support.design.R$drawable
+ android.support.design.R$id
+ android.support.design.R$integer
+ android.support.design.R$interpolator
+ android.support.design.R$layout
+ android.support.design.R$string
+ android.support.design.R$style
+ android.support.design.R$styleable
 android/support/swiperefreshlayout/R.java
  android.support.swiperefreshlayout.R
  android.support.swiperefreshlayout.R$attr
@@ -209,6 +248,18 @@ android/support/asynclayoutinflater/R.java
  android.support.asynclayoutinflater.R$string
  android.support.asynclayoutinflater.R$style
  android.support.asynclayoutinflater.R$styleable
+android/support/transition/R.java
+ android.support.transition.R
+ android.support.transition.R$attr
+ android.support.transition.R$color
+ android.support.transition.R$dimen
+ android.support.transition.R$drawable
+ android.support.transition.R$id
+ android.support.transition.R$integer
+ android.support.transition.R$layout
+ android.support.transition.R$string
+ android.support.transition.R$style
+ android.support.transition.R$styleable
 android/arch/lifecycle/viewmodel/R.java
  android.arch.lifecycle.viewmodel.R
 android/support/loader/R.java
@@ -223,7 +274,10 @@ android/support/loader/R.java
  android.support.loader.R$string
  android.support.loader.R$style
  android.support.loader.R$styleable
+org/billthefarmer/mididriver/R.java
+ org.billthefarmer.mididriver.R
 com/example/test/Config.java
  com.example.test.Config
+ com.example.test.Config$1
 com/example/test/MainActivity.java
  com.example.test.MainActivity

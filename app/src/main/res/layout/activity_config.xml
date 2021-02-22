@@ -83,12 +83,13 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:weightSum="3" >
-        <TextView
-
+        <Button
+            android:id="@+id/activity_musique_nb_loop"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-
+            android:text="0"
+            android:background="@color/white"
             />
         <Button
             android:id="@+id/activity_musique_si"
@@ -138,32 +139,39 @@
             android:background="@color/white"
             />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
         android:weightSum="3" >
-        <TextView
-
+        <Button
+            android:id="@+id/activity_musique_percu_4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-
+            android:text="Clap"
+            android:background="@color/white"
             />
-        <TextView
-
+        <Button
+            android:id="@+id/activity_musique_percu_5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-
+            android:text="Symbal"
+            android:background="@color/white"
             />
-        <TextView
+        <Button
+            android:id="@+id/activity_musique_percu_6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:text="Open HitHat"
+            android:background="@color/white"
             />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -177,7 +185,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="configuration"
-            android:background="@color/white"
+            android:background="@color/colorPrimary"
             />
 
     </LinearLayout>

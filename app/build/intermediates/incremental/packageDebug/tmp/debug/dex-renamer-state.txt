@@ -1,4 +1,4 @@
-#Fri Feb 19 23:24:44 CET 2021
+#Sun Feb 21 21:17:02 CET 2021
 base.0=/home/jaffres/Documents/5a/PFE/test/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex
